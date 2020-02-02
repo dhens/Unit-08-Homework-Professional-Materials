@@ -1,0 +1,164 @@
+/* Tiled trees background image */
+body{
+    background-image: url(../images/trees.png);
+
+    /* Reponsive margin to keep footer 20% view height  */
+    margin-bottom: 20vh;
+}
+
+/* Navbar container */
+.container.container-nav-bar{
+    padding: 0px;
+}
+
+/* Main content container */
+.container.main-content{
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.container>.row>.col-md-6>img{
+    margin-bottom: 50px;
+}
+
+.footer{
+    background-color: #666666;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+    /* Align text between top and bottom of footer */
+    line-height: 7vh; 
+    height: 8vh; 
+
+    border-top: 8px solid #4aaaa5;
+}
+
+/* Footer text */
+footer{
+    color: #cccccc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.navbar-brand.mb-0.h1{
+    font-family: 'Roboto Slab', serif;
+}
+
+h2,
+h4{
+    color: #4aaaa5;
+}
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+/* Aligns end of navlinks flush to right side of container */
+a.nav-link.nav3{
+    padding-right: 0;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #777777;
+    line-height: 50%;
+}
+
+/* Navbar / Header */
+.navbar.navbar-light.bg-light{
+    padding: 0px;
+    width: 100%;
+}
+
+/* Dawson Hensel h1 text in navbar */
+.navbar-brand.mb-0.h1{
+    color: #ffffff;
+    background-color: #4aaaa5;
+    padding: 15px;
+    height: 100%;
+    margin: 0;
+}
+
+/* Navbar links borders*/
+.nav-item:nth-child(-n+2){
+    border-right: solid 1px #cccccc;
+}
+
+/* Wrapper for portfolio images */
+.photo-grid-img{
+    margin: 0 auto;
+    max-width: 400px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+/* Text w/ rectangle background over portfolio images */
+.photo-text{
+    max-width: 400px;
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    height: 20%;
+    padding: 10px 0px 5px 0px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+
+
+@media screen and (max-width: 640px) {
+    /* Navbar container */
+    .container.container-nav-bar{
+        /* Remove extra spacing on sides */
+        padding: 0px;
+        margin: 0px;
+
+        width: 100%;
+
+    }
+    /* Main content container */
+    .container.main-content{
+        /* Adds margin to left and right so content isn't flush with walls */
+        max-width: 90%;
+}
+    /* Navbar */
+    .navbar.navbar-light.bg-light{
+        width: 100%;
+    }
+    /* Navbar "Dawson Hensel" text */
+    .navbar-brand.mb-0.h1 {
+      text-align: center;
+      float: none;
+      width: 100%;
+    }
+    /* Navbar links */
+    ul.nav.justify-content-end{
+        width: 100%;
+
+        /* ONLY used !important tag due to bootstrap forcing me to */
+        justify-content: center !important;
+    }
+  }
+
+  /* Fixes fake margin being added to navbar when between 640 and 575 px */
+  @media (min-width: 576px) {
+    .container{
+        max-width: 640px;
+    }
+}
+
+/* Sets max size of container to comply with HW requirement */
+@media (min-width: 980px) {
+    .container{
+        max-width: 980px;
+        margin-left: 40px;
+        margin: 0 auto;
+    }
+}

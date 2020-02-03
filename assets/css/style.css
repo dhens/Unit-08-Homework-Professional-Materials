@@ -13,7 +13,7 @@ body{
 
 /* Main content container */
 .container.main-content{
-    background-color: #ffffff;
+    background-color: #cccccc;
     padding: 20px;
 }
 
@@ -22,17 +22,16 @@ body{
 }
 
 .footer{
-    background-color: #666666;
+    background-color: #2c3e50;
     position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
 
     /* Align text between top and bottom of footer */
-    line-height: 7vh; 
+    line-height: 8vh; 
     height: 8vh; 
 
-    border-top: 8px solid #4aaaa5;
 }
 
 /* Footer text */
@@ -40,20 +39,9 @@ footer{
     color: #cccccc;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-.navbar-brand.mb-0.h1{
-    font-family: 'Roboto Slab', serif;
-}
-
 h2,
 h4{
-    color: #4aaaa5;
+    color: #34495e;
 }
 
 html{
@@ -81,7 +69,7 @@ a.nav-link.nav3{
 /* Dawson Hensel h1 text in navbar */
 .navbar-brand.mb-0.h1{
     color: #ffffff;
-    background-color: #4aaaa5;
+    background-color: #2c3e50;
     padding: 15px;
     height: 100%;
     margin: 0;
@@ -94,14 +82,17 @@ a.nav-link.nav3{
 
 /* Wrapper for portfolio images */
 .photo-grid-img{
-    margin: 0 auto;
-    max-width: 400px;
-    position: relative;
-    margin-bottom: 50px;
+    object-fit: cover;
+    padding: 5%;
+}
+
+.photo-grid-img:hover {
+    opacity: 75%;
+    transition-duration: .25s;
 }
 
 /* Text w/ rectangle background over portfolio images */
-.photo-text{
+/* .photo-text{
     max-width: 400px;
     position: absolute;
     width: 100%;
@@ -109,8 +100,8 @@ a.nav-link.nav3{
     height: 20%;
     padding: 10px 0px 5px 0px;
     background-color: #4aaaa5;
-    color: #ffffff;
-}
+    color: #ffffff; */
+/* } */
 
 
 @media screen and (max-width: 640px) {
@@ -119,7 +110,6 @@ a.nav-link.nav3{
         /* Remove extra spacing on sides */
         padding: 0px;
         margin: 0px;
-
         width: 100%;
 
     }

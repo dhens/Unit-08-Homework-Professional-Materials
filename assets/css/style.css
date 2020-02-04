@@ -1,6 +1,7 @@
 /* Tiled trees background image */
 body{
-    background-image: url(../images/trees.png);
+    background-color: #2d3436;
+    color: #ffffff;
 
     /* Reponsive margin to keep footer 20% view height  */
     margin-bottom: 20vh;
@@ -9,12 +10,13 @@ body{
 /* Navbar container */
 .container.container-nav-bar{
     padding: 0px;
+    background-color: #2c3e50;
 }
     
 /* Main content container */
 .container.main-content{
-    background-color: #f1f1f1;
     padding: 20px;
+    background-color: #2c3e50;
 }
 
 .container>.row>.col-md-6>img{
@@ -36,12 +38,12 @@ body{
 
 /* Footer text */
 footer{
-    color: #cccccc;
+    color: #ffffff;
 }
 
 h2,
 h4{
-    color: #34495e;
+    color: #ffffff;
 }
 
 html{
@@ -56,7 +58,7 @@ a.nav-link.nav3{
 
 .nav-link{
     text-decoration: none;
-    color: #777777;
+    color: #ffffff;
     line-height: 50%;
 }
 
@@ -64,6 +66,7 @@ a.nav-link.nav3{
 .navbar.navbar-light.bg-light{
     padding: 0px;
     width: 100%;
+    background-color: #2c3e50 !important;
 }
 
 /* Dawson Hensel h1 text in navbar */
@@ -91,7 +94,7 @@ a.nav-link.nav3{
     transition-duration: .25s;
 }
 
-/* Text w/ rectangle background over portfolio images */ */
+/* Text w/ rectangle background over portfolio images */ 
 .photo-text a{
 }
 

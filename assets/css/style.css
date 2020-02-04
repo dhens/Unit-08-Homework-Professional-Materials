@@ -7,6 +7,35 @@ body{
     margin-bottom: 20vh;
 }
 
+button {
+    border: 1px solid  #4c4c4c;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #2d3436;
+    color: white;
+}
+
+.buttonList {
+    display: flex;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Centered text */
+.centered {
+    display: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: black;
+}
+
 /* Navbar container */
 .container.container-nav-bar{
     padding: 0px;
@@ -49,6 +78,17 @@ h4{
 html{
     position: relative;
     min-height: 100%;
+}
+
+img:hover {
+    display: block;
+    opacity: 75%;
+    transition-duration: .25s;
+
+}
+
+li {
+    list-style: none;
 }
 
 /* Aligns end of navlinks flush to right side of container */

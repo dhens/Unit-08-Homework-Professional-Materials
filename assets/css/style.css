@@ -3,6 +3,7 @@ body{
     background-color: #2d3436;
     color: #ffffff;
 
+    height: 100%;
     /* Reponsive margin to keep footer 20% view height  */
     margin-bottom: 20vh;
 }
@@ -10,6 +11,7 @@ body{
 button {
     border: 1px solid  #4c4c4c;
     padding: 15px;
+    margin: 5px;
     border-radius: 8px;
     background-color: #2d3436;
     color: white;
@@ -17,6 +19,7 @@ button {
 
 .buttonList {
     display: flex;
+    justify-content: left;
 }
 
 .container {
@@ -39,13 +42,14 @@ button {
 /* Navbar container */
 .container.container-nav-bar{
     padding: 0px;
-    background-color: #2c3e50;
+    background-color: #222222;
 }
     
 /* Main content container */
 .container.main-content{
     padding: 20px;
-    background-color: #2c3e50;
+    background-color: #222222;
+    height: 100%;
 }
 
 .container>.row>.col-md-6>img{
@@ -53,7 +57,7 @@ button {
 }
 
 .footer{
-    background-color: #2c3e50;
+    background-color: #222222;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -80,8 +84,14 @@ html{
     min-height: 100%;
 }
 
+img {
+    width: 100%;
+}
+
 li {
     list-style: none;
+    display: flex;
+    flex-direction: row;
 }
 
 /* Aligns end of navlinks flush to right side of container */
@@ -99,13 +109,13 @@ a.nav-link.nav3{
 .navbar.navbar-light.bg-light{
     padding: 0px;
     width: 100%;
-    background-color: #2c3e50 !important;
+    background-color: #222222 !important;
 }
 
 /* Dawson Hensel h1 text in navbar */
 .navbar-brand.mb-0.h1{
     color: #ffffff;
-    background-color: #2c3e50;
+    background-color: #222222;
     padding: 15px;
     height: 100%;
     margin: 0;
@@ -131,6 +141,9 @@ a.nav-link.nav3{
 .photo-text a{
 }
 
+.text-left {
+
+}
 
 @media screen and (max-width: 640px) {
     /* Navbar container */
@@ -156,6 +169,9 @@ a.nav-link.nav3{
       float: none;
       width: 100%;
     }
+    p {
+        margin-top: 5%;
+    }
     /* Navbar links */
     ul.nav.justify-content-end{
         width: 100%;
@@ -170,6 +186,9 @@ a.nav-link.nav3{
     .container{
         max-width: 640px;
     }
+    p {
+        margin-top: 5%;
+    }
 }
 
 /* Sets max size of container to comply with HW requirement */
@@ -178,5 +197,8 @@ a.nav-link.nav3{
         max-width: 980px;
         margin-left: 40px;
         margin: 0 auto;
+    }
+    p {
+        margin-top: 5%;
     }
 }

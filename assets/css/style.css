@@ -80,13 +80,6 @@ html{
     min-height: 100%;
 }
 
-img:hover {
-    display: block;
-    opacity: 75%;
-    transition-duration: .25s;
-
-}
-
 li {
     list-style: none;
 }
